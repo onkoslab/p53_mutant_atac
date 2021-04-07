@@ -4,11 +4,11 @@
  <p align="justify" >Mutations in TP53 not only affect its tumour suppressor activity but also exerts oncogenic gain-of-function activity. While the genome-wide mutant p53 binding sites have been identified in cancer cell lines, the chromatin accessibility landscape driven by mutant p53 in primary tumours is unknown. Here, we leveraged the chromatin accessibility data of primary tumours from TCGA to identify differentially accessible regions in mutant p53 tumours compared to wild p53 tumours, especially in breast and colon cancers.</p>
 
 <br>
-<img src="https://github.com/onkoslab/p53_mutant_atac/blob/main/figure_readme.png" alt="alt text" width="700" height="410">
+<img src="https://github.com/onkoslab/p53_mutant_atac/blob/main/figure_readme.png" alt="" width="700" height="410">
 
 ____________________________________________________
 
-<h3> Docker Image <h3>
+<h3> Docker Image </h3>
   <p align="justify" > This docker image contains all the required R and Python libraries, along with the code required for generating all result files and figures.</p>
    
    
