@@ -53,9 +53,10 @@ docker run --rm -p {port}:8888 -e JUPYTER_ENABLE_LAB=yes -v {path_to_your_workin
 <b>8_Upset_plot:</b> R notebook, to plot Figure1 E&F for breast and colon
 <br><br>
  <b>./data</b> contains all the input data for analysis of limma, jaspar, histone, homer denovo, nonBform elements, expression(RSEM), gene copy number, cancer driver genes
+ <br><br>
+<b>./plot</b> all the figures created using the above notebooks
 <br><br>
-<br><br>./plot</b> all the figures created using the above notebooks
-<br><b>./profile</b> Files to create profile plots using Deepmap tools (plot heatmap & plot profile)
+<b>./profile</b> Files to create profile plots using Deepmap tools (plot heatmap & plot profile)
  <br><br>
 <b>./Results</b> files from limma, HOMER input, upset, tcgabiolinks
 
