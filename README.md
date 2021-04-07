@@ -33,30 +33,30 @@ docker run --rm -p {port}:8888 -e JUPYTER_ENABLE_LAB=yes -v {path_to_your_workin
 
 #### <br/> Files and directories
 <img src="https://github.com/onkoslab/p53_mutant_atac/blob/main/tre.png" alt="alt text" width="150" >
-<br>
+<br><br>
 <p>Run the notebooks in the given order as they are interdependant</p>
 <p>
 <b>1_Pre-processing:</b> Python notebook, to create input files for limma Differential Acc analysis. Raw data required can either be downloaded from gdc or taken from ./data ({BRCA/COAD}_rawcounts.tsv)
-<br>
+<br><br>
 <b>2_Differential_ACC:</b> R notebook, to perform Differential Acc: requires condition and raw counts file
-<br>
+<br><br>
 <b>3_Differentiall_exp:</b> R notebook, for samples from the above analysis which have expression data are given for differential exp analysis through tcgabiolinks
-<br>
+<br><br>
  <b>4_Segment_copy_number:</b> R notebook, to fetch the segment copy number score for samples from Acc. analysis.
-<br>
+<br><br>
  <b>5_p53RE:</b> R notebook, to find the response element of significant regions found in 2_Differential_ACC. Input requires fasta seq of the region
-<br>
+<br><br>
 <b>6_BRCA_analysis:</b> Python notebook, to explore and annotate significant region found in breast (Main figures)
-<br>
+<br><br>
  <b>7_COAD_analysis:</b> Python notebook, to explore and annotate significant region found in colon (Main figures)
-<br>
+<br><br>
 <b>8_Upset_plot:</b> R notebook, to plot Figure1 E&F for breast and colon
-<br>
+<br><br>
  <b>./data</b> contains all the input data for analysis of limma, jaspar, histone, homer denovo, nonBform elements, expression(RSEM), gene copy number, cancer driver genes
-<br>
-<b>./plot</b> all the figures created using the above notebooks
+<br><br>
+<br><br>./plot</b> all the figures created using the above notebooks
 <br><b>./profile</b> Files to create profile plots using Deepmap tools (plot heatmap & plot profile)
- <br>
+ <br><br>
 <b>./Results</b> files from limma, HOMER input, upset, tcgabiolinks
 
 </p>
