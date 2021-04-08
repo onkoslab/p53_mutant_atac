@@ -31,9 +31,31 @@ docker pull bhavya2017/p53_mutant_atac:latest
 ## to run the docker image
 docker run --rm -p {port}:8888 -e JUPYTER_ENABLE_LAB=yes -v {path_to_your_working_directory}:/home/jovyan/work bhavya2017/p53_mutant_atac:latest
 ```
+____________________________________________________
+
 
 ### <br/> Directory Structure
-<img src="https://github.com/onkoslab/p53_mutant_atac/blob/main/tre.png" alt="alt text" width="150" >
+<p> Make the following directories in your current path, if you are not using docker to run the notebooks.
+
+```diff
+### Extract the data folder
+mkdir Results
+mkdir plots
+mkdir profile
+mkdir Results/p53retriever
+mkdir profile/TF
+mkdir profile/histone
+```
+<p> 
+ <b>./data</b> contains all the input data for analysis of limma, jaspar, histone, homer denovo, nonBform elements, expression(RSEM), gene copy number, cancer driver genes
+ <br><br>
+<b>./plot</b> all the figures created using the above notebooks
+<br><br>
+<b>./profile</b> Files to create profile plots using Deepmap tools (plot heatmap & plot profile)
+ <br><br>
+<b>./Results</b> files from limma, HOMER input, upset, tcgabiolinks </p>
+
+
 <br><br>
 <p>Run the notebooks in the given order as they are interdependant</p>
 <p>
@@ -52,15 +74,6 @@ docker run --rm -p {port}:8888 -e JUPYTER_ENABLE_LAB=yes -v {path_to_your_workin
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/7_COAD_analysis.ipynb">7_COAD_analysis:</a></b> Python notebook, to explore and annotate significant region found in colon (Main figures)
 <br><br>
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/8_Upset_plot.ipynb">8_Upset_plot:</a></b> R notebook, to plot Figure1 E&F for breast and colon
-<br><br>
- <b>./data</b> contains all the input data for analysis of limma, jaspar, histone, homer denovo, nonBform elements, expression(RSEM), gene copy number, cancer driver genes
- <br><br>
-<b>./plot</b> all the figures created using the above notebooks
-<br><br>
-<b>./profile</b> Files to create profile plots using Deepmap tools (plot heatmap & plot profile)
- <br><br>
-<b>./Results</b> files from limma, HOMER input, upset, tcgabiolinks
-
 </p>
 
 
