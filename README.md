@@ -55,15 +55,15 @@ mkdir profile/histone
  <br><br>
 <b>./Results</b> files from limma, HOMER input, upset, tcgabiolinks </p>
 
+#### Jupyter Notebooks
 
-<br><br>
 <p>Run the notebooks in the given order as they are interdependant</p>
 <p>
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/1_Pre-processing.ipynb">1_Pre-processing:</a></b> Python notebook, to create input files for limma Differential Acc analysis. Raw data required can either be downloaded from gdc or taken from ./data ({BRCA/COAD}_rawcounts.tsv)
 <br><br>
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/2_Differential_ACC.ipynb">2_Differential_ACC:</a></b> R notebook, to perform Differential Acc: requires condition and raw counts file
 <br><br>
-<b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/3_Differentiall_exp.ipynb">3_Differentiall_exp:</a></b> R notebook, for samples from the above analysis which have expression data are given for differential exp analysis through tcgabiolinks
+<b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/3_Differential_exp.ipynb">3_Differential_exp:</a></b> R notebook, for samples from the above analysis which have expression data are given for differential exp analysis through tcgabiolinks
 <br><br>
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/4_Segment_copy_number.ipynb">4_Segment_copy_number:</a></b> R notebook, to fetch the segment copy number score for samples from Acc. analysis.
 <br><br>
@@ -76,7 +76,7 @@ mkdir profile/histone
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/8_Upset_plot.ipynb">8_Upset_plot:</a></b> R notebook, to plot Figure1 E&F for breast and colon
 </p>
 
-
+____________________________________________________
 #### <br/>*Required data
 
 <p align="justify" >To obtain results for Enhancer interactions in the siginificant peaks, Genehancer dataset is required. The dataset can be obtained through the following</p>
@@ -84,3 +84,36 @@ mkdir profile/histone
 
 <p> 1. Go to the the UCSC Table browser: https://genome.ucsc.edu/cgi-bin/hgTables <br> 2. Upload the significant peaks in bed format <br> 3.Select the following:<b>track</b>: Genehancer Regulatory Interaction cluster view (double elite); <b>assembly</b>:hg38; <b>output</b>:BED.
 <p <div class='a' </p>  
+
+____________________________________________________
+
+### <br/>Packages required
+
+<b>Python 3.8.6</b>
+
+```diff
+jupyter-client                6.1.7
+jupyterlab                    2.2.8
+matplotlib                    3.3.2
+numpy                         1.19.2
+scikit-image                  0.17.2
+scikit-learn                  0.23.2
+PyYAML                        5.3.1
+scipy                         1.5.2
+seaborn                       0.11.0
+pandas                        1.1.3
+statsmodels                   0.12.0
+pybedtools                    0.8.1
+```
+
+<b>R version 3.6.3</b>
+
+```diff
+BiocManager                   1.30.10
+edgeR                         3.28.1
+TCGAbiolinks                  2.14.1
+p53retriever                  1.2.0
+UpSetR                        1.4.0
+dbplyr                        1.4.4
+SummarizedExperiment          1.16.1
+```
