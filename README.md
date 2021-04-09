@@ -76,7 +76,6 @@ mkdir profile/histone
 <b><a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/8_Upset_plot.ipynb">8_Upset_plot:</a></b> R notebook, to plot Figure1 E&F for breast and colon
 </p>
 
-____________________________________________________
 #### <br/>*Required data
 
 <p align="justify" >To obtain results for Enhancer interactions in the siginificant peaks, Genehancer dataset is required. The dataset can be obtained through the following</p>
