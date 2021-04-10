@@ -39,6 +39,7 @@ ____________________________________________________
 
 ```diff
 ### Extract the data folder
+lrzuntar data.tar.lrz
 mkdir Results
 mkdir plots
 mkdir profile
@@ -78,12 +79,25 @@ mkdir profile/histone
 
 #### <br/>*Required data
 
+<b> Enhancer </b>
+
 <p align="justify" >To obtain results for Enhancer interactions in the siginificant peaks, Genehancer dataset is required. The dataset can be obtained through the following</p>
 
 
-<p> 1. Go to the the UCSC Table browser: https://genome.ucsc.edu/cgi-bin/hgTables <br> 2. Upload the significant peaks in bed format <br> 3.Select the following:<b>track</b>: Genehancer Regulatory Interaction cluster view (double elite); <b>assembly</b>:hg38; <b>output</b>:BED.
-<p <div class='a' </p>  
+<p> 1. Go to the the UCSC Table browser: https://genome.ucsc.edu/cgi-bin/hgTables. <br> 2. Upload the significant peaks in bed format. <br> 3.Select the following:<b>track</b>: Genehancer Regulatory Interaction cluster view (double elite); <b>assembly</b>:hg38; <b>output</b>:BED. <br> 4. Download and copy the output in ./data directory.</p>
 
+```diff
+cp {file_name} ./data/gene_enhancer_2017.bed_hg38.bed
+```
+
+<b> Mutant p53 ChIP-seq overlap </b>
+
+<p> To check for Mutant p53 ChIP-seq sites overlap with the significant regions extract and copy <a href="https://github.com/onkoslab/p53_mutant_atac/blob/main/Oth.ALL.05.TP53.AllCell_38.bed.lrz ">Oth.ALL.05.TP53.AllCell_38.bed.lrz:</a> to ./data directory.
+
+```diff
+lrunzip Oth.ALL.05.TP53.AllCell_38.bed.lrz
+cp Oth.ALL.05.TP53.AllCell_38.bed.lrz ./data/Oth.ALL.05.TP53.AllCell_38.bed
+```
 
 #### <br/>Required Packages
 
@@ -115,3 +129,4 @@ UpSetR                        1.4.0
 dbplyr                        1.4.4
 SummarizedExperiment          1.16.1
 ```
+
