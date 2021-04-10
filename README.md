@@ -17,7 +17,7 @@ All notebooks are documented, so you can check which kind of data is needed to r
 
 
 ____________________________________________________
-<h3> Docker Image </h3>
+<h3> 1. Using Docker </h3>
   <p align="justify" > This docker image contains all the required R and Python libraries, along with the code required for generating all result files and figures.</p>
    
    
@@ -34,7 +34,7 @@ docker run --rm -p {port}:8888 -e JUPYTER_ENABLE_LAB=yes -v {path_to_your_workin
 ____________________________________________________
 
 
-### <br/> Directory Structure
+<h3> 2. Alternative Method </h3>
 <p> Make the following directories in your current path, if you are not using docker to run the notebooks.
 
 ```diff
@@ -55,7 +55,7 @@ mkdir profile/histone
  <br><br>
 <b>./Results</b> files from limma, HOMER input, upset, tcgabiolinks </p>
 
-#### Jupyter Notebooks
+#### Notebook Details
 
 <p>Run the notebooks in the given order as they are interdependant</p>
 <p>
@@ -84,9 +84,8 @@ mkdir profile/histone
 <p> 1. Go to the the UCSC Table browser: https://genome.ucsc.edu/cgi-bin/hgTables <br> 2. Upload the significant peaks in bed format <br> 3.Select the following:<b>track</b>: Genehancer Regulatory Interaction cluster view (double elite); <b>assembly</b>:hg38; <b>output</b>:BED.
 <p <div class='a' </p>  
 
-____________________________________________________
 
-### <br/>Packages required
+#### <br/>Required Packages
 
 <b>Python 3.8.6</b>
 
